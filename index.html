@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="micss.css">
+    </head>
+    <body>
+        <h1 align="center">REGISTRO DE ALUMNO</h1>
+        <form name="reg_alumno" method="get">
+            Nombre de alumno     <input type="text" name="nombre_alumno" id="nombre_alumno" size="30"> <br>
+            Apellido de alumno   <input type="text" name="apellido_alumno" id="apellido_alumno" size="30"> <br>
+            Seleccionar el tipo de documento
+            <select name="tipo_doc" id="tipo_doc">  <br>
+                <option value="dni">DNI</option>
+                <option value="cipe">Cipe</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select> <br>
+            Ingrese el Nº de documento <input type="text" name="nombre_alumno" id="nombre_alumno" size="30"><br>
+            Seleccionar el sexo <input type="radio" name="sexo_socio" id="sexo_socio" value="varon">Masculino 
+                                <input type="radio" name="sexo_socio" id="sexo_socio" value="mujer">Femenino <br>
+            Ingrese edad        <input type="number" name="edad_socio" id="edad_socio" min=12 max="19"> <br>
+            Fecha de nacimiento <input type="date" name="fecha_nac" id="fecha_nac" min="2023/01/01"> <br>
+            Correo electrònico <input type="email"> <br>
+            Direccion de red social   <input type="text" name="red_social" id="red_social" size="30"> <br>
+            Seleccionen su materia/s adeudada:
+            <input type="checkbox" name="materias" id="materias" value="matematica">Matematica
+            <input type="checkbox" name="materias" id="materias" value="lengua">Lengua
+            <input type="checkbox" name="materias" id="materias" value="Historia">Historia
+            <input type="checkbox" name="materias" id="materias" value="geografia">Geografia
+            <input type="checkbox" name="materias" id="materias" value="programacion">Programacion <br>
+            <input type="image" src="welcome.png" onclick="alert('Bienvenido alumno')" width="50" height="50">
+            <input type="submit" value="Enviar">  
+            <input type="reset" value="Cancelar">
+        </form>
+
+    </body>
+</html>
